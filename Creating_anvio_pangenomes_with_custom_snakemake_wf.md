@@ -1,22 +1,29 @@
 # Human Oral Pangenomes
-Created  by Julian Torres-Morales ®
+This file describes the necessary steps to make species-level pangenomes from the Human Oral Microbiome Database.<br><br>
+Created  by Julian Torres-Morales ® <br>
 Date: May 9, 2025
 
-This file describes the necessary steps to make species-level pangenomes from the Human Oral Microbiome Database.
-Species were defined as being equivalents to Human Microbiome Taxa (HMT) from the Human Microbiome Database (HOMD; v4.0).
-Genomes info is available from: https://www.homd.org/genome/genome_table.
-
-## Pangenome definition and context
-A **pangenome** is the **"complete"** collection of **genes** from members of a closley related genomic group - typically within **species**.
-It encompases shared (**core**), and unique (**accessory**) genetic material.<br>
-**Pangenomic analysis** capture genetic diversity which can help to understand evolution, adaptation, and functional potential of these taxonomic groups.
-Pangenomes live in the realms of comparative genomics, epidemiology, and microbial ecology.
-
-## Why is this important?
+## What's the motivation?
 "This" can be broken down into three reasons:
 * To make accessible to the oral microbiology research community, and beyond, with systematically constructed pangenomes that can be inspected, downloaded, and modify by the users.
 * Having open-source code ensures our pipelines and workflow are reproducible and subject to the strictest review - you, the users.
 By making both the pangenomes and code available, we ensure our pipelines and workflow are reproducible and subject to the strictest review - you, the users.
+
+## Pangenome definition and context
+A **pangenome** is the **"complete"** collection of **genes** from members of a closley related taxonomic group - typically a **species**.
+It encompases shared (**core**), and unique (**accessory**) genetic material that captures the genetic diversity. It can help us to understand evolution, adaptation, and functional potential of these groups.
+
+## Data
+To construct a pangenome we need genomes.
+HOMD is an information-rich and multi-omic curated database for oral and aerodigestive tract microbes from humans. This database steps aside from the rest by objectively assigning sequences (genomes and ribosomal genes) to taxonomic groups, refered to as Human Microbiome Taxa (HMT), rather than creating new species names. **In this study, we defined HMT as equivalents to species.** 
+
+## What's the motivation?
+"This" can be broken down into three reasons:
+* To make accessible to the oral microbiology research community, and beyond, with systematically constructed pangenomes that can be inspected, downloaded, and modify by the users.
+* Having open-source code ensures our pipelines and workflow are reproducible and subject to the strictest review - you, the users.
+By making both the pangenomes and code available, we ensure our pipelines and workflow are reproducible and subject to the strictest review - you, the users.
+
+Genomes info is available from: https://www.homd.org/genome/genome_table.
 
 # Genome preparation
 1. Genomes were downloaded from NCBI on April 8, 2025 using the assembly ID with the program _datasets_. And are availabble from "../20250408_S_HOMDv4_HMP1993/03_genomes/"
